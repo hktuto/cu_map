@@ -94,11 +94,11 @@ export default defineComponent({
 .detailContainer {
   width: 100vw;
   height: 100vh;
-  padding: 98px;
+
   background: v-bind(bgColor);
   display: flex;
   justify-content: center;
-  align-content: center;
+  align-items: center;
 }
 .detailBg {
   width: 1720px;

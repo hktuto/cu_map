@@ -23,6 +23,7 @@ function createWindow() {
       ? "http://localhost:3000"
       : `file://${path.join(__dirname, "../dist/index.html")}`
   );
+  console.log(__dirname);
   // Open the DevTools.
   if (isDev) {
     mainWindow.webContents.openDevTools();
