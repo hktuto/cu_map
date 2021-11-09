@@ -14,6 +14,7 @@ export default defineComponent({
     const els = ref<any>([]);
     const router = useRouter();
     const itemClick = (e: any) => {
+      console.log("item clicked");
       const parent = e.target.closest(".distristIcon");
       const distrist = parent.getAttribute("data-distrist");
       router.push({
@@ -38,12 +39,14 @@ export default defineComponent({
       startAnimate();
       els.value = document.querySelectorAll(".distristIcon");
       els.value.forEach((el: any) => el.addEventListener("click", itemClick));
+      console.log(els.value);
     });
 
     onUnmounted(() => {
       els.value.forEach((el: any) =>
         el.removeEventListener("click", itemClick)
       );
+      console.log("unmount");
     });
 
     return {};

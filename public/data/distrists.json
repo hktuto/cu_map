@@ -1,0 +1,11 @@
+{
+  "distrists": [
+    {
+      "name": "yuen-long",
+      "bgColor": "#636648",
+      "coverColor": "rgb(50,51,33)",
+      "distristBgSvg": "../../assets/north_bg.svg?componet",
+      "distristBtnSvg": ""
+    }
+  ]
+}
