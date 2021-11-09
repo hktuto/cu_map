@@ -25,8 +25,12 @@ export default defineComponent({
       anime({
         targets: ".distristIcon",
         translateY: [
-          { value: -10, easing: "easeOutSine", duration: 500 },
-          { value: 0, easing: "easeInOutQuad", duration: 1200 },
+          { value: -5, easing: "easeOutSine", duration: 30 },
+          { value: 0, easing: "easeInOutQuad", duration: 500 },
+        ],
+        scale: [
+          { value: 1.03, duration: 300 },
+          { value: 1, duration: 800 },
         ],
         easing: "easeOutQuad",
         zIndex: [{ value: 2 }, { value: 2 }, { value: 1 }],

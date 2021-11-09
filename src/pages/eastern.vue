@@ -51,11 +51,13 @@ export default defineComponent({
       anime({
         targets: ".detailBtn",
         translateY: [
-          { value: -5, easing: "easeOutSine", duration: 500 },
-          { value: 0, easing: "easeInOutQuad", duration: 1200 },
+          { value: -5, easing: "easeOutSine", duration: 30 },
+          { value: 0, easing: "easeInOutQuad", duration: 500 },
         ],
-        easing: "easeOutQuad",
-        zIndex: [{ value: 2 }, { value: 2 }, { value: 1 }],
+        scale: [
+          { value: 1.03, duration: 300 },
+          { value: 1, duration: 800 },
+        ],
         loop: true,
         delay: anime.stagger(500),
       });
@@ -89,13 +91,13 @@ export default defineComponent({
   z-index: 0;
 }
 .distristBgColor {
-  fill: v-bind(bgColor);
+  fill: #487482;
 }
 .detailContainer {
   width: 100vw;
   height: 100vh;
 
-  background: v-bind(bgColor);
+  background: #487482;
   display: flex;
   justify-content: center;
   align-items: center;
