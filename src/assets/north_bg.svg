@@ -6578,7 +6578,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACBb+f8CDACsoihPEGOhtwAAAABJRU5ErkJggg==" tr
 		 M1233.89,84.65l0.05-3.08l-3.94-0.06l-0.05,3.08L1233.89,84.65z M1232.08,75.65c0.77-0.74,1.39-1.54,1.88-2.42l-3.22-0.05
 		c-0.07,0.11-0.15,0.2-0.22,0.28C1230.95,74.27,1231.47,74.99,1232.08,75.65z"/>
 </g>
-<g id="btn3" class="detailBtn" data-img="/images/north/d3-01.svg">
+<g id="btn3" class="detailBtn" data-img="./images/north/d3-01.svg">
 	<path style="fill:#BE1818;" d="M1048.81,118.04h-67.8c-8.89,0-16.1-7.21-16.1-16.1v0c0-8.89,7.21-16.1,16.1-16.1h67.8
 		c8.89,0,16.1,7.21,16.1,16.1v0C1064.91,110.84,1057.7,118.04,1048.81,118.04z"/>
 	<g>
@@ -6616,7 +6616,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACBb+f8CDACsoihPEGOhtwAAAABJRU5ErkJggg==" tr
 		c5.34,3.09,9.69,0.61,9.71-5.53c0.02-6.14-4.3-13.62-9.65-16.7c-5.34-3.08-9.68-0.61-9.7,5.54
 		C1002.34,33.67,1006.66,41.15,1012,44.23L1012,44.23"/>
 </g>
-<g id="btn2" class="detailBtn" data-img="/images/north/d2-01.svg">
+<g id="btn2" class="detailBtn" data-img="./images/north/d2-01.svg">
 	<path style="fill:#BE1818;" d="M1227.45,673.36h-67.8c-8.89,0-16.1-7.21-16.1-16.1l0,0c0-8.89,7.21-16.1,16.1-16.1h67.8
 		c8.89,0,16.1,7.21,16.1,16.1l0,0C1243.55,666.15,1236.34,673.36,1227.45,673.36z"/>
 	<g>
@@ -6660,7 +6660,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACBb+f8CDACsoihPEGOhtwAAAABJRU5ErkJggg==" tr
 		c5.34,3.09,9.69,0.61,9.71-5.53c0.02-6.14-4.3-13.62-9.65-16.7c-5.34-3.08-9.68-0.61-9.7,5.54
 		C1180.98,588.98,1185.3,596.46,1190.64,599.54L1190.64,599.54"/>
 </g>
-<g id="btn1" class="detailBtn" data-img="/images/north/d1-01.svg">
+<g id="btn1" class="detailBtn" data-img="./images/north/d1-01.svg">
 	<path style="fill:#BE1818;" d="M228.7,146.45h-67.8c-8.89,0-16.1-7.21-16.1-16.1v0c0-8.89,7.21-16.1,16.1-16.1h67.8
 		c8.89,0,16.1,7.21,16.1,16.1v0C244.8,139.24,237.6,146.45,228.7,146.45z"/>
 	<g>

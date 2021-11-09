@@ -13878,7 +13878,7 @@ zi0JLk9AIAiCIADxSiE/E+ibA38J6KeCfyr8W4N/afiHAEAQBEEQBEEQBEEQBEEQBEEQBEEQBEEQ
 		C477.13,653.4,476.8,653.59,476.76,653.79z M473.16,651c-0.53-0.28-0.82-0.88-1.04-1.38c-0.02-0.07,0-0.14,0.1-0.13
 		c0.55,0.12,1.46,0.26,1.66,0.92C474.03,650.97,473.65,651.25,473.16,651z"/>
 </g>
-<g id="btn2" class="detailBtn" data-img="/images/sham-shui-po/d1-01.svg">
+<g id="btn2" class="detailBtn" data-img="./images/sham-shui-po/d1-01.svg">
 	<path style="fill:#BE0000;" d="M1129.34,176.47h-67.8c-8.89,0-16.1-7.21-16.1-16.1v-1.47c0-8.89,7.21-16.1,16.1-16.1h67.8
 		c8.89,0,16.1,7.21,16.1,16.1v1.47C1145.44,169.26,1138.23,176.47,1129.34,176.47z"/>
 	<g>
@@ -13917,7 +13917,7 @@ zi0JLk9AIAiCIADxSiE/E+ibA38J6KeCfyr8W4N/afiHAEAQBEEQBEEQBEEQBEEQBEEQBEEQBEEQ
 		c5.34,3.23,9.69,0.64,9.71-5.78c0.02-6.42-4.3-14.24-9.65-17.47c-5.34-3.22-9.68-0.63-9.7,5.79
 		C1082.88,88.24,1087.19,96.06,1092.53,99.29L1092.53,99.29"/>
 </g>
-<g id="btn1" class="detailBtn" data-img="/images/sham-shui-po/d2-01.svg">
+<g id="btn1" class="detailBtn" data-img="./images/sham-shui-po/d2-01.svg">
 	<path style="fill:#BE0000;" d="M1037.06,448.11h-67.8c-8.89,0-16.1-7.21-16.1-16.1v0c0-8.89,7.21-16.1,16.1-16.1h67.8
 		c8.89,0,16.1,7.21,16.1,16.1v0C1053.16,440.9,1045.95,448.11,1037.06,448.11z"/>
 	<g>
