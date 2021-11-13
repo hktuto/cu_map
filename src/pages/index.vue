@@ -43,7 +43,7 @@ export default defineComponent({
         Math.pow(window.innerWidth, 2) + Math.pow(window.innerHeight, 2)
       );
       animation.toScale(rippleEl.value, (targetSize * 2) / 60, () => {
-        router.push({ path: evt.item.name });
+        router.push({ path: "/district/" + evt.item.name });
       });
     };
 

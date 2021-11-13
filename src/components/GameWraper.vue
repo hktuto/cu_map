@@ -11,6 +11,12 @@ import { computed, defineComponent } from "vue";
 import { useAnimation } from "../store/animation";
 
 export default defineComponent({
+  props: {
+    bgColor: {
+      type: String,
+      default: "#fff",
+    },
+  },
   setup() {
     const animation = useAnimation();
     const scale = computed(() => animation.screenScale);
@@ -29,13 +35,17 @@ export default defineComponent({
   align-items: center;
   width: 100vw;
   height: 100vh;
+  background: v-bind(bgColor);
 }
 .gameContainer {
-  width: 1920px;
-  height: 1080px;
+  min-width: 1920px;
+  min-height: 1080px;
   position: relative;
   transform: scale(v-bind(scale));
   transform-origin: center center;
   perspective: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 </style>

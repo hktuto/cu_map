@@ -40,8 +40,8 @@ export default defineComponent({
         animation.dropIn(
           self.value,
           shadow.value,
-          3000,
-          Math.random() * (1500 - 0) + 0,
+          1500,
+          Math.random() * (800 - 0) + 0,
           () => animation.floating(self.value, shadow.value)
         );
       }
@@ -78,7 +78,6 @@ export default defineComponent({
   left: v-bind(xPixel);
   top: v-bind(yPixel);
   /* background: #000; */
-  border-radius: 8px;
   cursor: pointer;
 }
 

@@ -7,10 +7,19 @@ type Response = {
   distrists: Distrist[];
 };
 
+export type DistrictPin = {
+  x: string;
+  y: string;
+  icon: string;
+  detailImg: string;
+};
+
 export type Distrist = {
   name: string;
   bgColor: string;
   coverColor: string;
+  mapIcon: string;
+  mapPin: DistrictPin[];
   homeIcon: string;
   homeIconX: number;
   homeIconY: number;

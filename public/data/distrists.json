@@ -3,42 +3,71 @@
     {
       "name": "north",
       "bgColor": "#636648",
-      "coverColor": "rgb(50,51,33)",
+      "coverColor": "#32341F",
       "homeIcon": "../images/homeicon/nt.svg",
       "homeIconX": 49,
-      "homeIconY": 15
+      "homeIconY": 15,
+      "mapIcon": "../images/detail/north.svg",
+      "mapPin": [
+        {
+          "x": 8.4,
+          "y": 3.6,
+          "icon": "../images/north/d1_point.svg",
+          "detailImg": "../images/north/d1-01.svg"
+        },
+        {
+          "x": 56,
+          "y": 0.4,
+          "icon": "../images/north/d2_point.svg",
+          "detailImg": "../images/north/d2-01.svg"
+        },
+        {
+          "x": 66.4,
+          "y": 63.5,
+          "icon": "../images/north/d3_point.svg",
+          "detailImg": "../images/north/d3-01.svg"
+        }
+      ]
     },
     {
       "name": "yuen-long",
-      "bgColor": "#636648",
-      "coverColor": "rgb(50,51,33)",
+      "bgColor": "#116A80",
+      "coverColor": "#053450",
       "homeIcon": "../images/homeicon/yt.svg",
       "homeIconX": 32,
-      "homeIconY": 28
+      "homeIconY": 28,
+      "mapIcon": "",
+      "mapPin": []
     },
     {
       "name": "tuen-mun",
-      "bgColor": "#636648",
-      "coverColor": "rgb(50,51,33)",
+      "bgColor": "#B3584F",
+      "coverColor": "#77332A",
       "homeIcon": "../images/homeicon/tm.svg",
       "homeIconX": 18,
-      "homeIconY": 41.9
+      "homeIconY": 41.9,
+      "mapIcon": "",
+      "mapPin": []
     },
     {
       "name": "tai-po",
-      "bgColor": "#636648",
-      "coverColor": "rgb(50,51,33)",
+      "bgColor": "#318080",
+      "coverColor": "#00423E",
       "homeIcon": "../images/homeicon/tp.svg",
       "homeIconX": 49,
-      "homeIconY": 28.7
+      "homeIconY": 28.7,
+      "mapIcon": "",
+      "mapPin": []
     },
     {
       "name": "tsuen-wan",
-      "bgColor": "#636648",
-      "coverColor": "rgb(50,51,33)",
+      "bgColor": "#6E9CAA",
+      "coverColor": "#013567",
       "homeIcon": "../images/homeicon/tw.svg",
       "homeIconX": 40.7,
-      "homeIconY": 44.8
+      "homeIconY": 44.8,
+      "mapIcon": "",
+      "mapPin": []
     },
     {
       "name": "sha-tin",
@@ -46,103 +75,129 @@
       "coverColor": "rgb(50,51,33)",
       "homeIcon": "../images/homeicon/st.svg",
       "homeIconX": 56.6,
-      "homeIconY": 43.9
+      "homeIconY": 43.9,
+      "mapIcon": "",
+      "mapPin": []
     },
     {
       "name": "kwai-tsing",
-      "bgColor": "#636648",
-      "coverColor": "rgb(50,51,33)",
+      "bgColor": "#565859",
+      "coverColor": "#3D3E42",
       "homeIcon": "../images/homeicon/kt.svg",
       "homeIconX": 44.7,
-      "homeIconY": 52.6
+      "homeIconY": 52.6,
+      "mapIcon": "",
+      "mapPin": []
     },
     {
       "name": "sham-shui-po",
-      "bgColor": "#636648",
-      "coverColor": "rgb(50,51,33)",
+      "bgColor": "#782C57",
+      "coverColor": "#48162F",
       "homeIcon": "../images/homeicon/ssp.svg",
       "homeIconX": 49.8,
-      "homeIconY": 49.7
+      "homeIconY": 49.7,
+      "mapIcon": "",
+      "mapPin": []
     },
     {
       "name": "yau-tsim-mong",
-      "bgColor": "#636648",
-      "coverColor": "rgb(50,51,33)",
+      "bgColor": "#A91E39",
+      "coverColor": "#71170C",
       "homeIcon": "../images/homeicon/ytm.svg",
       "homeIconX": 52.6,
-      "homeIconY": 55.5
+      "homeIconY": 55.5,
+      "mapIcon": "",
+      "mapPin": []
     },
     {
       "name": "kowloonCity",
-      "bgColor": "#636648",
-      "coverColor": "rgb(50,51,33)",
+      "bgColor": "#806024",
+      "coverColor": "#4C3817",
       "homeIcon": "../images/homeicon/kc.svg",
       "homeIconX": 57.2,
-      "homeIconY": 52.5
+      "homeIconY": 52.5,
+      "mapIcon": "",
+      "mapPin": []
     },
     {
       "name": "wong-tai-sin",
-      "bgColor": "#636648",
-      "coverColor": "rgb(50,51,33)",
+      "bgColor": "#225945",
+      "coverColor": "#123A18",
       "homeIcon": "../images/homeicon/wts.svg",
       "homeIconX": 60.9,
-      "homeIconY": 47.1
+      "homeIconY": 47.1,
+      "mapIcon": "",
+      "mapPin": []
     },
     {
       "name": "kung-tong",
-      "bgColor": "#636648",
-      "coverColor": "rgb(50,51,33)",
+      "bgColor": "#764880",
+      "coverColor": "#441D49",
       "homeIcon": "../images/homeicon/kt_1.svg",
       "homeIconX": 63.6,
-      "homeIconY": 57.5
+      "homeIconY": 57.5,
+      "mapIcon": "",
+      "mapPin": []
     },
     {
       "name": "saikung",
-      "bgColor": "#636648",
-      "coverColor": "rgb(50,51,33)",
+      "bgColor": "#6C6780",
+      "coverColor": "#353156",
       "homeIcon": "../images/homeicon/sk.svg",
       "homeIconX": 84.8,
-      "homeIconY": 44.7
+      "homeIconY": 44.7,
+      "mapIcon": "",
+      "mapPin": []
     },
     {
       "name": "islands",
-      "bgColor": "#636648",
-      "coverColor": "rgb(50,51,33)",
+      "bgColor": "#347136",
+      "coverColor": "#174F2C",
       "homeIcon": "../images/homeicon/island.svg",
       "homeIconX": 12,
-      "homeIconY": 72.6
+      "homeIconY": 72.6,
+      "mapIcon": "",
+      "mapPin": []
     },
     {
       "name": "central",
-      "bgColor": "#636648",
-      "coverColor": "rgb(50,51,33)",
+      "bgColor": "#238080",
+      "coverColor": "#00423E",
       "homeIcon": "../images/homeicon/ct.svg",
       "homeIconX": 48.1,
-      "homeIconY": 68.2
+      "homeIconY": 68.2,
+      "mapIcon": "",
+      "mapPin": []
     },
     {
       "name": "wanchai",
-      "bgColor": "#636648",
-      "coverColor": "rgb(50,51,33)",
+      "bgColor": "#726799",
+      "coverColor": "#383069",
       "homeIcon": "../images/homeicon/wc.svg",
       "homeIconX": 55.1,
-      "homeIconY": 70.4
+      "homeIconY": 70.4,
+      "mapIcon": "",
+      "mapPin": []
     },
     {
       "name": "eastern",
-      "bgColor": "#636648",
-      "coverColor": "rgb(50,51,33)",
+      "bgColor": "#487482",
+      "coverColor": "#053450",
       "homeIcon": "../images/homeicon/et.svg",
       "homeIconX": 61.9,
-      "homeIconY": 72.3
+      "homeIconY": 72.3,
+      "mapIcon": "",
+      "mapPin": []
     },
     {
       "name": "southern",
-      "bgColor": "#636648",
-      "coverColor": "rgb(50,51,33)",
+      "bgColor": "#5B879E",
+      "coverColor": "#055B7E",
       "homeIcon": "../images/homeicon/south.svg",
       "homeIconX": 59,
-      "homeIconY": 78.6
+      "homeIconY": 78.6,
+      "mapIcon": "",
+      "mapPin": []
     }
   ]
 }
