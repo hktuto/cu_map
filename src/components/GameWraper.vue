@@ -1,6 +1,8 @@
 <template>
-  <div class="gameContainer">
-    <slot></slot>
+  <div class="appContainer">
+    <div class="gameContainer">
+      <slot></slot>
+    </div>
   </div>
 </template>
 
@@ -20,15 +22,20 @@ export default defineComponent({
 </script>
 
 <style scoped>
+.appContainer {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
 .gameContainer {
-  position: absolute;
-  top: 0;
-  left: 0;
   width: 1920px;
   height: 1080px;
   position: relative;
   transform: scale(v-bind(scale));
-  transform-origin: top left;
+  transform-origin: center center;
   perspective: 100px;
 }
 </style>

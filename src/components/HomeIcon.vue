@@ -1,31 +1,27 @@
 <template>
   <div class="iconContainer" @click="clickHandler">
-    <img :src="icon" ref="self" />
+    <img :src="item.homeIcon" ref="self" />
     <div class="shadow" ref="shadow"></div>
   </div>
 </template>
 
 <script lang="ts">
-import { computed, defineComponent, onMounted, ref } from "vue";
+import { computed, defineComponent, onMounted, PropType, ref } from "vue";
 import { useAnimation } from "../store/animation";
+import { Distrist } from "../store/district";
 
 export default defineComponent({
   props: {
-    x: {
-      type: Number,
-      default: 0,
-    },
-    y: {
-      type: Number,
-      default: 0,
-    },
-    icon: {
-      type: String,
-      default: "",
-    },
-    target: {
-      type: String,
-      default: "",
+    item: {
+      type: Object as PropType<Distrist>,
+      default: () => ({
+        name: "",
+        bgColor: "",
+        coverColor: "",
+        homeIcon: "",
+        homeIconX: 0,
+        homeIconY: 0,
+      }),
     },
   },
   emits: ["iconClick"],
@@ -36,17 +32,15 @@ export default defineComponent({
 
     const idleAnimation = ref<anime.AnimeInstance>();
 
-    const iconScale = computed(() => animation.screenScale);
-
-    const xPixel = computed(() => props.x + "%");
-    const yPixel = computed(() => props.y + "%");
+    const xPixel = computed(() => props.item.homeIconX + "%");
+    const yPixel = computed(() => props.item.homeIconY + "%");
 
     const playIntro = () => {
       if (self.value && shadow.value) {
         animation.dropIn(
           self.value,
           shadow.value,
-          1500,
+          3000,
           Math.random() * (1500 - 0) + 0,
           () => animation.floating(self.value, shadow.value)
         );
@@ -57,7 +51,7 @@ export default defineComponent({
       //   idleAnimation.value?.pause();
       emit("iconClick", {
         el: self.value,
-        ...props,
+        item: props.item,
         e,
       });
     };
