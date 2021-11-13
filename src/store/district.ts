@@ -11,11 +11,12 @@ export type Distrist = {
   name: string;
   bgColor: string;
   coverColor: string;
-  distristBgSvg: string;
-  distristBtnSvg: string;
+  homeIcon: string;
+  homeIconX: number;
+  homeIconY: number;
 };
 
-export const useDistristStore = defineStore("distrist", () => {
+export const useDistrictStore = defineStore("distrist", () => {
   const allDistrist = ref<Distrist[]>([]);
 
   const getCurrentDistrist = (name: String) => {
@@ -27,7 +28,6 @@ export const useDistristStore = defineStore("distrist", () => {
       data: { distrists },
     } = await axios.get<Response>("/data/distrists.json");
     allDistrist.value = distrists;
-    console.log(distrists);
   };
 
   return {

@@ -2,6 +2,30 @@
   <router-view />
 </template>
 
+<script lang="ts">
+import { defineComponent, onMounted, onUnmounted } from "vue";
+import { useAnimation } from "./store/animation";
+import { useDistrictStore } from "./store/district";
+
+export default defineComponent({
+  setup() {
+    const animation = useAnimation();
+    const district = useDistrictStore();
+
+    district.getData();
+
+    onMounted(() => {
+      window.addEventListener("resize", animation.setScale);
+    });
+
+    onUnmounted(() => {
+      window.removeEventListener("resize", animation.setScale);
+    });
+    animation.setScale();
+  },
+});
+</script>
+
 <style>
 body,
 html {

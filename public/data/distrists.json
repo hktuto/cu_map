@@ -1,11 +1,148 @@
 {
   "distrists": [
     {
+      "name": "north",
+      "bgColor": "#636648",
+      "coverColor": "rgb(50,51,33)",
+      "homeIcon": "../images/homeicon/nt.svg",
+      "homeIconX": 49,
+      "homeIconY": 15
+    },
+    {
       "name": "yuen-long",
       "bgColor": "#636648",
       "coverColor": "rgb(50,51,33)",
-      "distristBgSvg": "../../assets/north_bg.svg?componet",
-      "distristBtnSvg": ""
+      "homeIcon": "../images/homeicon/yt.svg",
+      "homeIconX": 32,
+      "homeIconY": 28
+    },
+    {
+      "name": "tuen-mun",
+      "bgColor": "#636648",
+      "coverColor": "rgb(50,51,33)",
+      "homeIcon": "../images/homeicon/tm.svg",
+      "homeIconX": 18,
+      "homeIconY": 41.9
+    },
+    {
+      "name": "tai-po",
+      "bgColor": "#636648",
+      "coverColor": "rgb(50,51,33)",
+      "homeIcon": "../images/homeicon/tp.svg",
+      "homeIconX": 49,
+      "homeIconY": 28.7
+    },
+    {
+      "name": "tsuen-wan",
+      "bgColor": "#636648",
+      "coverColor": "rgb(50,51,33)",
+      "homeIcon": "../images/homeicon/tw.svg",
+      "homeIconX": 40.7,
+      "homeIconY": 44.8
+    },
+    {
+      "name": "sha-tin",
+      "bgColor": "#636648",
+      "coverColor": "rgb(50,51,33)",
+      "homeIcon": "../images/homeicon/st.svg",
+      "homeIconX": 56.6,
+      "homeIconY": 43.9
+    },
+    {
+      "name": "kwai-tsing",
+      "bgColor": "#636648",
+      "coverColor": "rgb(50,51,33)",
+      "homeIcon": "../images/homeicon/kt.svg",
+      "homeIconX": 44.7,
+      "homeIconY": 52.6
+    },
+    {
+      "name": "sham-shui-po",
+      "bgColor": "#636648",
+      "coverColor": "rgb(50,51,33)",
+      "homeIcon": "../images/homeicon/ssp.svg",
+      "homeIconX": 49.8,
+      "homeIconY": 49.7
+    },
+    {
+      "name": "yau-tsim-mong",
+      "bgColor": "#636648",
+      "coverColor": "rgb(50,51,33)",
+      "homeIcon": "../images/homeicon/ytm.svg",
+      "homeIconX": 52.6,
+      "homeIconY": 55.5
+    },
+    {
+      "name": "kowloonCity",
+      "bgColor": "#636648",
+      "coverColor": "rgb(50,51,33)",
+      "homeIcon": "../images/homeicon/kc.svg",
+      "homeIconX": 57.2,
+      "homeIconY": 52.5
+    },
+    {
+      "name": "wong-tai-sin",
+      "bgColor": "#636648",
+      "coverColor": "rgb(50,51,33)",
+      "homeIcon": "../images/homeicon/wts.svg",
+      "homeIconX": 60.9,
+      "homeIconY": 47.1
+    },
+    {
+      "name": "kung-tong",
+      "bgColor": "#636648",
+      "coverColor": "rgb(50,51,33)",
+      "homeIcon": "../images/homeicon/kt_1.svg",
+      "homeIconX": 63.6,
+      "homeIconY": 57.5
+    },
+    {
+      "name": "saikung",
+      "bgColor": "#636648",
+      "coverColor": "rgb(50,51,33)",
+      "homeIcon": "../images/homeicon/sk.svg",
+      "homeIconX": 84.8,
+      "homeIconY": 44.7
+    },
+    {
+      "name": "islands",
+      "bgColor": "#636648",
+      "coverColor": "rgb(50,51,33)",
+      "homeIcon": "../images/homeicon/island.svg",
+      "homeIconX": 12,
+      "homeIconY": 72.6
+    },
+    {
+      "name": "central",
+      "bgColor": "#636648",
+      "coverColor": "rgb(50,51,33)",
+      "homeIcon": "../images/homeicon/ct.svg",
+      "homeIconX": 48.1,
+      "homeIconY": 68.2
+    },
+    {
+      "name": "wanchai",
+      "bgColor": "#636648",
+      "coverColor": "rgb(50,51,33)",
+      "homeIcon": "../images/homeicon/wc.svg",
+      "homeIconX": 55.1,
+      "homeIconY": 70.4
+    },
+    {
+      "name": "eastern",
+      "bgColor": "#636648",
+      "coverColor": "rgb(50,51,33)",
+      "homeIcon": "../images/homeicon/et.svg",
+      "homeIconX": 61.9,
+      "homeIconY": 72.3
+    },
+    {
+      "name": "southern",
+      "bgColor": "#636648",
+      "coverColor": "rgb(50,51,33)",
+      "homeIcon": "../images/homeicon/south.svg",
+      "homeIconX": 59,
+      "homeIconY": 78.6
     }
   ]
 }
