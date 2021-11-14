@@ -35,7 +35,7 @@ export default defineComponent({
         shadow.value,
         1500,
         Math.random() * (800 - 0) + 0,
-        () => animation.floating(self.value, shadow.value)
+        () => animation.floating(self.value, shadow.value, [0, -20], 3000)
       );
     });
 

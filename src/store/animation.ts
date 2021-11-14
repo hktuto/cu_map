@@ -42,15 +42,17 @@ export const useAnimation = defineStore("animation", () => {
 
   const floating = (
     mainEl: HTMLElement | string,
-    shadowEl: HTMLElement | string
+    shadowEl: HTMLElement | string,
+    range: number[] = [0, -10],
+    delayMax: number = 10000
   ) => {
-    const delay = Math.random() * (10000 - 1000) + 1000;
+    const delay = Math.random() * (delayMax - 0);
     anime({
       targets: mainEl,
-      translateY: [0, -10],
+      translateY: range,
       // scale: [1, 1.1],
       loop: true,
-      duration: 3000,
+      duration: 2000,
       direction: "alternate",
       easing: "easeInOutSine",
       delay,

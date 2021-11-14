@@ -3,7 +3,7 @@
     <div class="districtContainer">
       <div class="mapContainer" ref="mapContainer">
         <img :src="district?.mapIcon" />
-        <div class="iconsContainer">
+        <div v-if="!detailOpened" class="iconsContainer">
           <district-icon
             v-for="item in district?.mapPin"
             :key="item.icon"
@@ -12,7 +12,7 @@
           />
         </div>
         <div :class="{ detailContainer: true, opened: detailOpened }">
-          <img :src="detailImg" />
+          <object type="image/svg+xml" :data="detailImg"></object>
         </div>
         <div class="actionContainer">
           <div class="homeBtn">
@@ -73,7 +73,7 @@ export default defineComponent({
       }
       setTimeout(() => {
         router.push({ path: "/" });
-      }, 1000);
+      }, 300);
     };
 
     const goBack = () => {
@@ -124,14 +124,14 @@ export default defineComponent({
   height: 880px;
   background: v-bind(coverColor);
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
-  animation: circleIn 1s;
+  animation: circleIn 0.5s;
   position: relative;
   img {
     width: 100%;
   }
   &.out {
     clip-path: circle(0%);
-    animation: circleOut 1s;
+    animation: circleOut 0.5s;
   }
 }
 
@@ -168,7 +168,8 @@ export default defineComponent({
   top: 0;
   width: 1720px;
   height: 880px;
-  background: v-bind(coverColor);
+  background: rgba(0, 0, 0, 0.85);
+  backdrop-filter: blur(20px);
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
   // animation: detailIn ease-in 1s 1 reverse;
   clip-path: circle(0%);

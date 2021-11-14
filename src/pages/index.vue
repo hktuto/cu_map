@@ -10,7 +10,9 @@
       </div>
 
       <img class="bg" src="/images/home_bg.svg" />
+      <HomeInfo />
     </GameWraper>
+
     <div class="ripple" ref="rippleEl"></div>
   </div>
 </template>
@@ -22,9 +24,10 @@ import HomeIcon from "../components/HomeIcon.vue";
 import { useDistrictStore } from "../store/district";
 import { useAnimation } from "../store/animation";
 import GameWraper from "../components/GameWraper.vue";
+import HomeInfo from "../components/HomeInfo.vue";
 
 export default defineComponent({
-  components: { HomeIcon, GameWraper },
+  components: { HomeIcon, GameWraper, HomeInfo },
   setup() {
     const rippleX = ref("100px");
     const rippleY = ref("100px");
@@ -59,7 +62,7 @@ export default defineComponent({
 });
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 .bg {
   z-index: -2;
   width: 100%;
