@@ -2,7 +2,13 @@
   <game-wraper :bgColor="bgColor">
     <div class="districtContainer">
       <div :class="{ mapContainer: true, detailOpened }" ref="mapContainer">
-        <img :src="district?.mapIcon" />
+        <div class="mapRadius">
+          <img :src="district?.mapIcon" />
+        </div>
+
+        <div :class="{ detailContainer: true, opened: detailOpened }">
+          <object type="image/svg+xml" :data="detailImg"></object>
+        </div>
         <div v-if="!detailOpened" class="iconsContainer">
           <district-icon
             v-for="item in district?.mapPin"
@@ -10,9 +16,6 @@
             :item="item"
             @click="openDetial(item)"
           />
-        </div>
-        <div :class="{ detailContainer: true, opened: detailOpened }">
-          <object type="image/svg+xml" :data="detailImg"></object>
         </div>
       </div>
     </div>
@@ -29,10 +32,11 @@
 
 <script lang="ts">
 import { computed, defineComponent, onMounted, ref } from "vue";
-import { useRoute, useRouter } from "vue-router";
+import { onBeforeRouteLeave, useRoute, useRouter } from "vue-router";
 import GameWraper from "../../components/GameWraper.vue";
 import { DistrictPin, useDistrictStore } from "../../store/district";
 import DistrictIcon from "../../components/DistrictIcon.vue";
+import { useAppStore } from "../../store/app";
 
 export default defineComponent({
   components: { GameWraper, DistrictIcon },
@@ -40,6 +44,7 @@ export default defineComponent({
     // basic setup
     const route = useRoute();
     const router = useRouter();
+    const appStore = useAppStore();
     const districtStore = useDistrictStore();
     const district = districtStore.getCurrentDistrist(
       route.params.district as any
@@ -64,14 +69,16 @@ export default defineComponent({
       detailOpened.value = true;
     };
 
-    const goHome = () => {
+    onBeforeRouteLeave(async () => {
       if (mapContainer.value) {
         mapContainer.value.classList.add("out");
         actionContainer.value?.classList.add("out");
+        await appStore.sleep(300);
       }
-      setTimeout(() => {
-        router.push({ path: "/" });
-      }, 500);
+    });
+
+    const goHome = () => {
+      router.push({ path: "/" });
     };
 
     const goBack = () => {
@@ -79,13 +86,7 @@ export default defineComponent({
         detailOpened.value = false;
         return;
       }
-      if (mapContainer.value) {
-        mapContainer.value.classList.add("out");
-        actionContainer.value?.classList.add("out");
-      }
-      setTimeout(() => {
-        router.back();
-      }, 500);
+      router.back();
     };
 
     return {
@@ -120,22 +121,44 @@ export default defineComponent({
 .mapContainer {
   width: 1720px;
   height: 880px;
+
   background: v-bind(coverColor);
-  box-shadow: 20px 0 40px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
   border-radius: 12px;
-  overflow: hidden;
+  overflow: visible;
   animation: circleIn 0.5s;
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
+  .mapRadius {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 12px;
+  }
   img {
     width: 100%;
     transform: scale(1);
     transform-origin: center center;
     transition: transform 0.2s ease-in-out;
   }
+  &:before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0);
+    position: absolute;
+    z-index: 2;
+    opacity: 0;
+    transition: opacity 0.4s;
+    box-shadow: inset 0 0 80px 0px #000000;
+    pointer-events: none;
+  }
   &.detailOpened {
+    &:before {
+      opacity: 1;
+    }
     img {
       transform: scale(2);
     }
@@ -148,6 +171,7 @@ export default defineComponent({
 
 .actionContainer {
   width: 1720px;
+
   margin: 0 auto;
   position: absolute;
   bottom: 20px;
@@ -210,8 +234,9 @@ export default defineComponent({
 }
 
 .iconsContainer {
-  width: 100%;
-  padding-top: 56%;
+  position: absolute;
+  width: 1720px;
+  height: 880px;
   position: absolute;
   left: 0;
   top: 0;

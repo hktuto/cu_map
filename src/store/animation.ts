@@ -21,6 +21,37 @@ export const useAnimation = defineStore("animation", () => {
     duration: number = 800,
     delay: number = 0,
     callback: any = () => {}
+  ): anime.AnimeTimelineInstance => {
+    const dropInAnimtion = anime.timeline({
+      duration,
+      delay,
+    });
+    dropInAnimtion
+      .add({
+        targets: mainEl,
+        opacity: [0, 1],
+        translateY: [-100, 0],
+        complete: callback,
+      })
+      .add(
+        {
+          targets: shadowEl,
+          opacity: [0, 1],
+          rotateX: ["70deg", "70deg"],
+          scale: [2, 1],
+        },
+        0
+      );
+
+    return dropInAnimtion;
+  };
+
+  const dropOut = (
+    mainEl: HTMLElement | string,
+    shadowEl: HTMLElement | string,
+    duration: number = 800,
+    delay: number = 0,
+    callback: any = () => {}
   ) => {
     anime({
       targets: mainEl,

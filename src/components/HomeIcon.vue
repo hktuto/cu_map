@@ -7,7 +7,9 @@
 
 <script lang="ts">
 import { computed, defineComponent, onMounted, PropType, ref } from "vue";
+import { onBeforeRouteLeave } from "vue-router";
 import { useAnimation } from "../store/animation";
+import { useAppStore } from "../store/app";
 import { Distrist } from "../store/district";
 
 export default defineComponent({
@@ -29,6 +31,8 @@ export default defineComponent({
     const self = ref<any>();
     const shadow = ref<any>();
     const animation = useAnimation();
+    const appStore = useAppStore();
+    const intro = ref<anime.AnimeTimelineInstance>();
 
     const idleAnimation = ref<anime.AnimeInstance>();
 
@@ -37,7 +41,7 @@ export default defineComponent({
 
     const playIntro = () => {
       if (self.value && shadow.value) {
-        animation.dropIn(
+        intro.value = animation.dropIn(
           self.value,
           shadow.value,
           1500,
