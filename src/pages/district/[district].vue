@@ -16,10 +16,10 @@
         </div>
         <div class="actionContainer">
           <div class="homeBtn">
-            <img :src="homeBtn" @click="goHome" />
+            <img src="/images/home.svg" @click="goHome" />
           </div>
           <div class="backBtn">
-            <img :src="backBtn" @click="goBack" />
+            <img src="/images/back.svg" @click="goBack" />
           </div>
         </div>
       </div>
@@ -55,10 +55,6 @@ export default defineComponent({
     const detailX = ref("0%");
     const detailY = ref("0%");
 
-    // dirty fix
-    const homeBtn = "../images/home.svg";
-    const backBtn = "../images/back.svg";
-
     const openDetial = (item: DistrictPin) => {
       console.log(DataTransferItemList);
       detailImg.value = item.detailImg;
@@ -92,8 +88,6 @@ export default defineComponent({
     return {
       goHome,
       goBack,
-      homeBtn,
-      backBtn,
       district,
       bgColor,
       coverColor,
