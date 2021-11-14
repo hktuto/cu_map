@@ -56,6 +56,7 @@ export default defineComponent({
   top: v-bind(yPercent);
   /* background: #000; */
   cursor: pointer;
+  transform: scale(1);
 }
 .icon {
   z-index: 2;

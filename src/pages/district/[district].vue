@@ -1,7 +1,7 @@
 <template>
   <game-wraper :bgColor="bgColor">
     <div class="districtContainer">
-      <div class="mapContainer" ref="mapContainer">
+      <div :class="{ mapContainer: true, detailOpened }" ref="mapContainer">
         <img :src="district?.mapIcon" />
         <div v-if="!detailOpened" class="iconsContainer">
           <district-icon
@@ -14,14 +14,14 @@
         <div :class="{ detailContainer: true, opened: detailOpened }">
           <object type="image/svg+xml" :data="detailImg"></object>
         </div>
-        <div class="actionContainer">
-          <div class="homeBtn">
-            <img src="/images/home.svg" @click="goHome" />
-          </div>
-          <div class="backBtn">
-            <img src="/images/back.svg" @click="goBack" />
-          </div>
-        </div>
+      </div>
+    </div>
+    <div class="actionContainer" ref="actionContainer">
+      <div class="homeBtn">
+        <img src="/images/home.svg" @click="goHome" />
+      </div>
+      <div class="backBtn">
+        <img src="/images/back.svg" @click="goBack" />
       </div>
     </div>
   </game-wraper>
@@ -46,6 +46,7 @@ export default defineComponent({
     );
 
     const mapContainer = ref<HTMLElement>();
+    const actionContainer = ref<HTMLElement>();
 
     const bgColor = computed(() => district?.bgColor);
     const coverColor = computed(() => district?.coverColor);
@@ -66,10 +67,11 @@ export default defineComponent({
     const goHome = () => {
       if (mapContainer.value) {
         mapContainer.value.classList.add("out");
+        actionContainer.value?.classList.add("out");
       }
       setTimeout(() => {
         router.push({ path: "/" });
-      }, 300);
+      }, 500);
     };
 
     const goBack = () => {
@@ -79,10 +81,11 @@ export default defineComponent({
       }
       if (mapContainer.value) {
         mapContainer.value.classList.add("out");
+        actionContainer.value?.classList.add("out");
       }
       setTimeout(() => {
         router.back();
-      }, 1000);
+      }, 500);
     };
 
     return {
@@ -92,6 +95,7 @@ export default defineComponent({
       bgColor,
       coverColor,
       mapContainer,
+      actionContainer,
       openDetial,
       detailImg,
       detailX,
@@ -117,11 +121,24 @@ export default defineComponent({
   width: 1720px;
   height: 880px;
   background: v-bind(coverColor);
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+  box-shadow: 20px 0 40px rgba(0, 0, 0, 0.4);
+  border-radius: 12px;
+  overflow: hidden;
   animation: circleIn 0.5s;
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   img {
     width: 100%;
+    transform: scale(1);
+    transform-origin: center center;
+    transition: transform 0.2s ease-in-out;
+  }
+  &.detailOpened {
+    img {
+      transform: scale(2);
+    }
   }
   &.out {
     clip-path: circle(0%);
@@ -130,12 +147,18 @@ export default defineComponent({
 }
 
 .actionContainer {
+  width: 1720px;
+  margin: 0 auto;
   position: absolute;
-  bottom: -80px;
-  left: 0px;
+  bottom: 20px;
+  // left: 20px;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 65px 65px;
   gap: 10px;
+  &.out {
+    clip-path: circle(0%);
+    animation: circleOut 0.5s;
+  }
 }
 
 @keyframes circleIn {

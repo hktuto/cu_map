@@ -4,28 +4,28 @@
       "name": "north",
       "bgColor": "#636648",
       "coverColor": "#32341F",
-      "homeIcon": "../images/homeicon/nt.svg",
+      "homeIcon": "./images/homeicon/nt.svg",
       "homeIconX": 49,
       "homeIconY": 15,
-      "mapIcon": "../images/detail/north.svg",
+      "mapIcon": "./images/detail/north.svg",
       "mapPin": [
         {
           "x": 8.4,
           "y": 3.6,
-          "icon": "../images/north/d1_point.svg",
-          "detailImg": "../images/north/d1-01.svg"
+          "icon": "./images/north/d1_point.svg",
+          "detailImg": "./images/north/d1-01.svg"
         },
         {
           "x": 56,
           "y": 0.4,
-          "icon": "../images/north/d2_point.svg",
-          "detailImg": "../images/north/d2-01.svg"
+          "icon": "./images/north/d2_point.svg",
+          "detailImg": "./images/north/d2-01.svg"
         },
         {
           "x": 66.4,
           "y": 63.5,
-          "icon": "../images/north/d3_point.svg",
-          "detailImg": "../images/north/d3-01.svg"
+          "icon": "./images/north/d3_point.svg",
+          "detailImg": "./images/north/d3-01.svg"
         }
       ]
     },
@@ -33,28 +33,28 @@
       "name": "yuen-long",
       "bgColor": "#116A80",
       "coverColor": "#053450",
-      "homeIcon": "../images/homeicon/yt.svg",
+      "homeIcon": "./images/homeicon/yt.svg",
       "homeIconX": 32,
       "homeIconY": 28,
-      "mapIcon": "../images/detail/yuen-long.svg",
+      "mapIcon": "./images/detail/yuen-long.svg",
       "mapPin": [
         {
           "x": 71.4,
           "y": 55,
-          "icon": "../images/yuen-long/d1_p.svg",
-          "detailImg": "../images/yuen-long/d1-01.svg"
+          "icon": "./images/yuen-long/d1_p.svg",
+          "detailImg": "./images/yuen-long/d1-01.svg"
         },
         {
           "x": 56.3,
           "y": 30,
-          "icon": "../images/yuen-long/d2_p.svg",
-          "detailImg": "../images/yuen-long/d2-01.svg"
+          "icon": "./images/yuen-long/d2_p.svg",
+          "detailImg": "./images/yuen-long/d2-01.svg"
         },
         {
           "x": 71.4,
           "y": 20,
-          "icon": "../images/yuen-long/d3_p.svg",
-          "detailImg": "../images/yuen-long/d3-01.svg"
+          "icon": "./images/yuen-long/d3_p.svg",
+          "detailImg": "./images/yuen-long/d3-01.svg"
         }
       ]
     },
@@ -62,16 +62,16 @@
       "name": "tuen-mun",
       "bgColor": "#B3584F",
       "coverColor": "#77332A",
-      "homeIcon": "../images/homeicon/tm.svg",
+      "homeIcon": "./images/homeicon/tm.svg",
       "homeIconX": 18,
       "homeIconY": 41.9,
-      "mapIcon": "../images/detail/tuen-mun.svg",
+      "mapIcon": "./images/detail/tuen-mun.svg",
       "mapPin": [
         {
           "x": 49.3,
           "y": 60,
-          "icon": "../images/tuen-mun/d1_p.svg",
-          "detailImg": "../images/tuen-mun/d1-01.svg"
+          "icon": "./images/tuen-mun/d1_p.svg",
+          "detailImg": "./images/tuen-mun/d1-01.svg"
         }
       ]
     },
@@ -79,28 +79,28 @@
       "name": "tai-po",
       "bgColor": "#318080",
       "coverColor": "#00423E",
-      "homeIcon": "../images/homeicon/tp.svg",
+      "homeIcon": "./images/homeicon/tp.svg",
       "homeIconX": 49,
       "homeIconY": 28.7,
-      "mapIcon": "../images/detail/tai-po.svg",
+      "mapIcon": "./images/detail/tai-po.svg",
       "mapPin": [
         {
           "x": 59.4,
           "y": 47.6,
-          "icon": "../images/taipo/d1_p.svg",
-          "detailImg": "../images/taipo/d1-01.svg"
+          "icon": "./images/taipo/d1_p.svg",
+          "detailImg": "./images/taipo/d1-01.svg"
         },
         {
           "x": 37.4,
           "y": 4.1,
-          "icon": "../images/taipo/d2_p.svg",
-          "detailImg": "../images/taipo/d2-01.svg"
+          "icon": "./images/taipo/d2_p.svg",
+          "detailImg": "./images/taipo/d2-01.svg"
         },
         {
           "x": 42.6,
           "y": 57,
-          "icon": "../images/taipo/d3_p.svg",
-          "detailImg": "../images/taipo/d3-01.svg"
+          "icon": "./images/taipo/d3_p.svg",
+          "detailImg": "./images/taipo/d3-01.svg"
         }
       ]
     },
@@ -108,28 +108,28 @@
       "name": "tsuen-wan",
       "bgColor": "#6E9CAA",
       "coverColor": "#013567",
-      "homeIcon": "../images/homeicon/tw.svg",
+      "homeIcon": "./images/homeicon/tw.svg",
       "homeIconX": 40.7,
       "homeIconY": 44.8,
-      "mapIcon": "../images/detail/tsuen-wan.svg",
+      "mapIcon": "./images/detail/tsuen-wan.svg",
       "mapPin": [
         {
           "x": 48,
           "y": 48,
-          "icon": "../images/tsuen-wan/d1_p.svg",
-          "detailImg": "../images/tsuen-wan/d1-01.svg"
+          "icon": "./images/tsuen-wan/d1_p.svg",
+          "detailImg": "./images/tsuen-wan/d1-01.svg"
         },
         {
           "x": 38.5,
           "y": 28,
-          "icon": "../images/tsuen-wan/d2_p.svg",
-          "detailImg": "../images/tsuen-wan/d2-01.svg"
+          "icon": "./images/tsuen-wan/d2_p.svg",
+          "detailImg": "./images/tsuen-wan/d2-01.svg"
         },
         {
           "x": 34.7,
           "y": 49,
-          "icon": "../images/tsuen-wan/d3_p.svg",
-          "detailImg": "../images/tsuen-wan/d3-01.svg"
+          "icon": "./images/tsuen-wan/d3_p.svg",
+          "detailImg": "./images/tsuen-wan/d3-01.svg"
         }
       ]
     },
@@ -137,22 +137,22 @@
       "name": "sha-tin",
       "bgColor": "#636648",
       "coverColor": "rgb(50,51,33)",
-      "homeIcon": "../images/homeicon/st.svg",
+      "homeIcon": "./images/homeicon/st.svg",
       "homeIconX": 56.6,
       "homeIconY": 40.9,
-      "mapIcon": "../images/detail/sha-tin.svg",
+      "mapIcon": "./images/detail/sha-tin.svg",
       "mapPin": [
         {
           "x": 74.4,
           "y": 1,
-          "icon": "../images/sha-tin/d1_p.svg",
-          "detailImg": "../images/sha-tin/d1-01.svg"
+          "icon": "./images/sha-tin/d1_p.svg",
+          "detailImg": "./images/sha-tin/d1-01.svg"
         },
         {
           "x": 40.2,
           "y": 60,
-          "icon": "../images/sha-tin/d2_p.svg",
-          "detailImg": "../images/sha-tin/d2-01.svg"
+          "icon": "./images/sha-tin/d2_p.svg",
+          "detailImg": "./images/sha-tin/d2-01.svg"
         }
       ]
     },
@@ -160,16 +160,16 @@
       "name": "kwai-tsing",
       "bgColor": "#565859",
       "coverColor": "#3D3E42",
-      "homeIcon": "../images/homeicon/kt.svg",
+      "homeIcon": "./images/homeicon/kt.svg",
       "homeIconX": 44.7,
       "homeIconY": 52.6,
-      "mapIcon": "../images/detail/kwai-tsing.svg",
+      "mapIcon": "./images/detail/kwai-tsing.svg",
       "mapPin": [
         {
           "x": 56.1,
           "y": 60,
-          "icon": "../images/kwai-tsing/d1_p.svg",
-          "detailImg": "../images/kwai-tsing/d1-01.svg"
+          "icon": "./images/kwai-tsing/d1_p.svg",
+          "detailImg": "./images/kwai-tsing/d1-01.svg"
         }
       ]
     },
@@ -177,22 +177,22 @@
       "name": "sham-shui-po",
       "bgColor": "#782C57",
       "coverColor": "#48162F",
-      "homeIcon": "../images/homeicon/ssp.svg",
+      "homeIcon": "./images/homeicon/ssp.svg",
       "homeIconX": 49.8,
       "homeIconY": 49.7,
-      "mapIcon": "../images/detail/sham-shui-po.svg",
+      "mapIcon": "./images/detail/sham-shui-po.svg",
       "mapPin": [
         {
           "x": 60.7,
           "y": 6.4,
-          "icon": "../images/sham-shui-po/d1_p.svg",
-          "detailImg": "../images/sham-shui-po/d1-01.svg"
+          "icon": "./images/sham-shui-po/d1_p.svg",
+          "detailImg": "./images/sham-shui-po/d1-01.svg"
         },
         {
           "x": 55.4,
           "y": 36,
-          "icon": "../images/sham-shui-po/d2_p.svg",
-          "detailImg": "../images/sham-shui-po/d2-01.svg"
+          "icon": "./images/sham-shui-po/d2_p.svg",
+          "detailImg": "./images/sham-shui-po/d2-01.svg"
         }
       ]
     },
@@ -200,22 +200,22 @@
       "name": "yau-tsim-mong",
       "bgColor": "#A91E39",
       "coverColor": "#71170C",
-      "homeIcon": "../images/homeicon/ytm.svg",
+      "homeIcon": "./images/homeicon/ytm.svg",
       "homeIconX": 52.6,
       "homeIconY": 58,
-      "mapIcon": "../images/detail/yau-tsim-mong.svg",
+      "mapIcon": "./images/detail/yau-tsim-mong.svg",
       "mapPin": [
         {
           "x": 17.8,
           "y": 42,
-          "icon": "../images/yau-tsim-mong/d1_p.svg",
-          "detailImg": "../images/yau-tsim-mong/d1-01.svg"
+          "icon": "./images/yau-tsim-mong/d1_p.svg",
+          "detailImg": "./images/yau-tsim-mong/d1-01.svg"
         },
         {
           "x": 70,
           "y": 70,
-          "icon": "../images/yau-tsim-mong/d2_p.svg",
-          "detailImg": "../images/yau-tsim-mong/d2-01.svg"
+          "icon": "./images/yau-tsim-mong/d2_p.svg",
+          "detailImg": "./images/yau-tsim-mong/d2-01.svg"
         }
       ]
     },
@@ -223,16 +223,16 @@
       "name": "kowloonCity",
       "bgColor": "#806024",
       "coverColor": "#4C3817",
-      "homeIcon": "../images/homeicon/kc.svg",
+      "homeIcon": "./images/homeicon/kc.svg",
       "homeIconX": 57.2,
       "homeIconY": 52.5,
-      "mapIcon": "../images/detail/kowloonCity.svg",
+      "mapIcon": "./images/detail/kowloonCity.svg",
       "mapPin": [
         {
           "x": 26.9,
           "y": 42,
-          "icon": "../images/kowloonCity/d1_p.svg",
-          "detailImg": "../images/kowloonCity/d1-01.svg"
+          "icon": "./images/kowloonCity/d1_p.svg",
+          "detailImg": "./images/kowloonCity/d1-01.svg"
         }
       ]
     },
@@ -240,22 +240,22 @@
       "name": "wong-tai-sin",
       "bgColor": "#225945",
       "coverColor": "#123A18",
-      "homeIcon": "../images/homeicon/wts.svg",
+      "homeIcon": "./images/homeicon/wts.svg",
       "homeIconX": 60.9,
       "homeIconY": 47.1,
-      "mapIcon": "../images/detail/wong-tai-sin.svg",
+      "mapIcon": "./images/detail/wong-tai-sin.svg",
       "mapPin": [
         {
           "x": 17.7,
           "y": 56,
-          "icon": "../images/wong-tai-sin/d1_p.svg",
-          "detailImg": "../images/wong-tai-sin/d1-01.svg"
+          "icon": "./images/wong-tai-sin/d1_p.svg",
+          "detailImg": "./images/wong-tai-sin/d1-01.svg"
         },
         {
           "x": 65,
           "y": 76,
-          "icon": "../images/wong-tai-sin/d2_p.svg",
-          "detailImg": "../images/wong-tai-sin/d2-01.svg"
+          "icon": "./images/wong-tai-sin/d2_p.svg",
+          "detailImg": "./images/wong-tai-sin/d2-01.svg"
         }
       ]
     },
@@ -263,22 +263,22 @@
       "name": "kung-tong",
       "bgColor": "#764880",
       "coverColor": "#441D49",
-      "homeIcon": "../images/homeicon/kt_1.svg",
+      "homeIcon": "./images/homeicon/kt_1.svg",
       "homeIconX": 63.6,
       "homeIconY": 57.5,
-      "mapIcon": "../images/detail/kwun-tong.svg",
+      "mapIcon": "./images/detail/kwun-tong.svg",
       "mapPin": [
         {
           "x": 76.9,
           "y": 56,
-          "icon": "../images/kwun-tong/d1_p.svg",
-          "detailImg": "../images/kwun-tong/d1-01.svg"
+          "icon": "./images/kwun-tong/d1_p.svg",
+          "detailImg": "./images/kwun-tong/d1-01.svg"
         },
         {
           "x": 83.5,
           "y": 20,
-          "icon": "../images/kwun-tong/d2_p.svg",
-          "detailImg": "../images/kwun-tong/d2-01.svg"
+          "icon": "./images/kwun-tong/d2_p.svg",
+          "detailImg": "./images/kwun-tong/d2-01.svg"
         }
       ]
     },
@@ -286,16 +286,16 @@
       "name": "saikung",
       "bgColor": "#6C6780",
       "coverColor": "#353156",
-      "homeIcon": "../images/homeicon/sk.svg",
+      "homeIcon": "./images/homeicon/sk.svg",
       "homeIconX": 84.8,
       "homeIconY": 44.7,
-      "mapIcon": "../images/detail/saikung.svg",
+      "mapIcon": "./images/detail/saikung.svg",
       "mapPin": [
         {
           "x": 37.6,
           "y": 32,
-          "icon": "../images/saikung/d1_p.svg",
-          "detailImg": "../images/saikung/d1-01.svg"
+          "icon": "./images/saikung/d1_p.svg",
+          "detailImg": "./images/saikung/d1-01.svg"
         }
       ]
     },
@@ -303,16 +303,16 @@
       "name": "islands",
       "bgColor": "#347136",
       "coverColor": "#174F2C",
-      "homeIcon": "../images/homeicon/island.svg",
+      "homeIcon": "./images/homeicon/island.svg",
       "homeIconX": 12,
       "homeIconY": 72.6,
-      "mapIcon": "../images/detail/island.svg",
+      "mapIcon": "./images/detail/island.svg",
       "mapPin": [
         {
           "x": 39.7,
           "y": 5.4,
-          "icon": "../images/island/d1_point.svg",
-          "detailImg": "../images/island/d1-01.svg"
+          "icon": "./images/island/d1_point.svg",
+          "detailImg": "./images/island/d1-01.svg"
         }
       ]
     },
@@ -320,22 +320,22 @@
       "name": "central",
       "bgColor": "#238080",
       "coverColor": "#00423E",
-      "homeIcon": "../images/homeicon/ct.svg",
+      "homeIcon": "./images/homeicon/ct.svg",
       "homeIconX": 48.1,
       "homeIconY": 66,
-      "mapIcon": "../images/detail/central.svg",
+      "mapIcon": "./images/detail/central.svg",
       "mapPin": [
         {
           "x": 76,
           "y": 70,
-          "icon": "../images/central/d1_p.svg",
-          "detailImg": "../images/central/d1-01.svg"
+          "icon": "./images/central/d1_p.svg",
+          "detailImg": "./images/central/d1-01.svg"
         },
         {
           "x": 65,
           "y": 57,
-          "icon": "../images/central/d2_p.svg",
-          "detailImg": "../images/central/d2-01.svg"
+          "icon": "./images/central/d2_p.svg",
+          "detailImg": "./images/central/d2-01.svg"
         }
       ]
     },
@@ -343,22 +343,22 @@
       "name": "wanchai",
       "bgColor": "#726799",
       "coverColor": "#383069",
-      "homeIcon": "../images/homeicon/wc.svg",
+      "homeIcon": "./images/homeicon/wc.svg",
       "homeIconX": 55.1,
       "homeIconY": 70.4,
-      "mapIcon": "../images/detail/wanchai.svg",
+      "mapIcon": "./images/detail/wanchai.svg",
       "mapPin": [
         {
           "x": 4,
           "y": 6,
-          "icon": "../images/wanchai/d1_p.svg",
-          "detailImg": "../images/wanchai/d1-01.svg"
+          "icon": "./images/wanchai/d1_p.svg",
+          "detailImg": "./images/wanchai/d1-01.svg"
         },
         {
           "x": 16,
           "y": 20,
-          "icon": "../images/wanchai/d2_p.svg",
-          "detailImg": "../images/wanchai/d2-01.svg"
+          "icon": "./images/wanchai/d2_p.svg",
+          "detailImg": "./images/wanchai/d2-01.svg"
         }
       ]
     },
@@ -366,22 +366,22 @@
       "name": "eastern",
       "bgColor": "#487482",
       "coverColor": "#053450",
-      "homeIcon": "../images/homeicon/et.svg",
+      "homeIcon": "./images/homeicon/et.svg",
       "homeIconX": 61.9,
       "homeIconY": 70,
-      "mapIcon": "../images/detail/eastern.svg",
+      "mapIcon": "./images/detail/eastern.svg",
       "mapPin": [
         {
           "x": 55,
           "y": 44,
-          "icon": "../images/eastern/d1_p.svg",
-          "detailImg": "../images/eastern/d1-01.svg"
+          "icon": "./images/eastern/d1_p.svg",
+          "detailImg": "./images/eastern/d1-01.svg"
         },
         {
           "x": 3,
           "y": 16,
-          "icon": "../images/eastern/d2_p.svg",
-          "detailImg": "../images/eastern/d2-01.svg"
+          "icon": "./images/eastern/d2_p.svg",
+          "detailImg": "./images/eastern/d2-01.svg"
         }
       ]
     },
@@ -389,28 +389,28 @@
       "name": "southern",
       "bgColor": "#5B879E",
       "coverColor": "#055B7E",
-      "homeIcon": "../images/homeicon/south.svg",
+      "homeIcon": "./images/homeicon/south.svg",
       "homeIconX": 59,
       "homeIconY": 78.6,
-      "mapIcon": "../images/detail/southern.svg",
+      "mapIcon": "./images/detail/southern.svg",
       "mapPin": [
         {
           "x": 27,
           "y": 54,
-          "icon": "../images/southern/d1_p.svg",
-          "detailImg": "../images/southern/d1-01.svg"
+          "icon": "./images/southern/d1_p.svg",
+          "detailImg": "./images/southern/d1-01.svg"
         },
         {
           "x": 52,
           "y": 53.5,
-          "icon": "../images/southern/d2_p.svg",
-          "detailImg": "../images/southern/d2-01.svg"
+          "icon": "./images/southern/d2_p.svg",
+          "detailImg": "./images/southern/d2-01.svg"
         },
         {
           "x": 45,
           "y": 2,
-          "icon": "../images/southern/d3_p.svg",
-          "detailImg": "../images/southern/d3-01.svg"
+          "icon": "./images/southern/d3_p.svg",
+          "detailImg": "./images/southern/d3-01.svg"
         }
       ]
     }

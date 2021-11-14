@@ -1,15 +1,15 @@
 import { acceptHMRUpdate, defineStore } from "pinia";
 import { ref } from "vue-demi";
 
-import axios from "axios";
+import districtJson from "../../public/data/distrists.json";
 
 type Response = {
   distrists: Distrist[];
 };
 
 export type DistrictPin = {
-  x: string;
-  y: string;
+  x: number;
+  y: number;
   icon: string;
   detailImg: string;
 };
@@ -33,9 +33,7 @@ export const useDistrictStore = defineStore("distrist", () => {
   };
 
   const getData = async () => {
-    const {
-      data: { distrists },
-    } = await axios.get<Response>("/data/distrists.json");
+    const { distrists } = districtJson;
     allDistrist.value = distrists;
   };
 

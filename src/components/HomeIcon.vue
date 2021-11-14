@@ -79,6 +79,7 @@ export default defineComponent({
   top: v-bind(yPixel);
   /* background: #000; */
   cursor: pointer;
+  transform: scale(1);
 }
 
 .shadow {
