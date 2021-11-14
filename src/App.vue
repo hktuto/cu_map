@@ -3,7 +3,8 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, onMounted, onUnmounted } from "vue";
+import { defineComponent, onMounted, onUnmounted, ref, watch } from "vue";
+import { useRoute, useRouter } from "vue-router";
 import { useAnimation } from "./store/animation";
 import { useDistrictStore } from "./store/district";
 
@@ -12,16 +13,37 @@ export default defineComponent({
     const animation = useAnimation();
     const district = useDistrictStore();
 
+    const route = useRoute();
+    const router = useRouter();
+
+    const timer = ref(600);
+
     district.getData();
+
+    const resetTimer = () => {
+      timer.value = 600;
+    };
 
     onMounted(() => {
       window.addEventListener("resize", animation.setScale);
+      window.addEventListener("click", resetTimer);
+      setInterval(() => (timer.value -= 1), 1000);
     });
 
     onUnmounted(() => {
       window.removeEventListener("resize", animation.setScale);
+      window.removeEventListener("click", resetTimer);
     });
     animation.setScale();
+
+    watch(timer, (time) => {
+      if (time <= 0) {
+        resetTimer();
+        if (route.name !== "index") {
+          router.push("/");
+        }
+      }
+    });
   },
 });
 </script>
