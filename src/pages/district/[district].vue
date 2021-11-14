@@ -7,7 +7,9 @@
         </div>
 
         <div :class="{ detailContainer: true, opened: detailOpened }">
-          <object type="image/svg+xml" :data="detailImg"></object>
+          <div class="detailClip">
+            <object type="image/svg+xml" :data="detailImg"></object>
+          </div>
         </div>
         <div v-if="!detailOpened" class="iconsContainer">
           <district-icon
@@ -154,6 +156,8 @@ export default defineComponent({
     transition: opacity 0.4s;
     box-shadow: inset 0 0 80px 0px #000000;
     pointer-events: none;
+    border-radius: 12px;
+    border: 1px solid #000;
   }
   &.detailOpened {
     &:before {
@@ -209,11 +213,16 @@ export default defineComponent({
   top: 0;
   width: 1720px;
   height: 880px;
-  background: rgba(0, 0, 0, 0.85);
-  backdrop-filter: blur(20px);
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
-  // animation: detailIn ease-in 1s 1 reverse;
+
   clip-path: circle(0%);
+  // animation: detailIn ease-in 1s 1 reverse;
+  .detailClip {
+    border-radius: 12px;
+    overflow: hidden;
+    background: rgba(0, 0, 0, 0.85);
+    backdrop-filter: blur(20px);
+  }
+
   // z-index: -1;
   img {
     width: 100%;
