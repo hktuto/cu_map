@@ -3,7 +3,7 @@
     <div class="districtContainer">
       <div :class="{ mapContainer: true, detailOpened }" ref="mapContainer">
         <div class="mapRadius">
-          <img :src="district?.mapIcon" />
+          <object type="image/svg+xml" :data="district?.mapIcon" />
         </div>
 
         <div :class="{ detailContainer: true, opened: detailOpened }">
@@ -163,8 +163,10 @@ export default defineComponent({
     &:before {
       opacity: 1;
     }
-    img {
-      transform: scale(2);
+    .mapRadius {
+      img {
+        transform: scale(2);
+      }
     }
   }
   &.out {
@@ -219,8 +221,10 @@ export default defineComponent({
   .detailClip {
     border-radius: 12px;
     overflow: hidden;
-    background: rgba(0, 0, 0, 0.85);
-    backdrop-filter: blur(20px);
+    background: rgba(0, 0, 0, 0.95);
+    img {
+      width: 100%;
+    }
   }
 
   // z-index: -1;
