@@ -2,6 +2,7 @@
   <div class="infoContainer">
     <img
       src="/images/info_content.svg"
+      style="width: 773px"
       :class="{ infoContent: true, hidden: !infoOpened }"
     />
     <img
