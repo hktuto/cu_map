@@ -16,7 +16,7 @@
             v-for="item in district?.mapPin"
             :key="item.icon"
             :item="item"
-            @click="openDetial(item)"
+            @click="openDetail(item)"
           />
         </div>
       </div>
@@ -63,7 +63,7 @@ export default defineComponent({
     const detailX = ref("0%");
     const detailY = ref("0%");
 
-    const openDetial = (item: DistrictPin) => {
+    const openDetail = (item: DistrictPin) => {
       console.log(DataTransferItemList);
       detailImg.value = item.detailImg;
       detailX.value = item.x + "%";
@@ -99,7 +99,7 @@ export default defineComponent({
       coverColor,
       mapContainer,
       actionContainer,
-      openDetial,
+      openDetail,
       detailImg,
       detailX,
       detailY,
