@@ -29,8 +29,8 @@ import HomeInfo from "../components/HomeInfo.vue";
 export default defineComponent({
   components: { HomeIcon, GameWraper, HomeInfo },
   setup() {
-    const rippleX = ref("100px");
-    const rippleY = ref("100px");
+    const rippleX = ref("0px");
+    const rippleY = ref("0px");
     const rippleEl = ref<any>();
     const rippleColor = ref<string>("#000");
     const animation = useAnimation();
@@ -38,14 +38,12 @@ export default defineComponent({
     const district = useDistrictStore();
 
     const iconClickHandler = (evt: any) => {
-      console.log(evt);
-      rippleX.value = evt.e.x - 30 + "px";
-      rippleY.value = evt.e.y - 30 + "px";
+      // console.log(evt);
       rippleColor.value = evt.item.bgColor;
-      const targetSize = Math.sqrt(
-        Math.pow(window.innerWidth, 2) + Math.pow(window.innerHeight, 2)
-      );
-      animation.toScale(rippleEl.value, (targetSize * 2) / 60, () => {
+      // const targetSize = Math.sqrt(
+      //   Math.pow(window.innerWidth, 2) + Math.pow(window.innerHeight, 2)
+      // );
+      animation.fadeIn(rippleEl.value, () => {
         router.push({ path: "/district/" + evt.item.name });
       });
     };
@@ -69,15 +67,15 @@ export default defineComponent({
   height: auto;
 }
 .ripple {
-  width: 60px;
-  height: 60px;
+  width: 100vw;
+  height: 100vh;
   position: absolute;
   top: v-bind(rippleY);
   left: v-bind(rippleX);
   background: v-bind(rippleColor);
-  border-radius: 50%;
   opacity: 0;
   transform-origin: center center;
+  pointer-events: none;
 }
 
 .iconsContainer {

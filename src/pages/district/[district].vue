@@ -170,7 +170,7 @@ export default defineComponent({
     }
   }
   &.out {
-    clip-path: circle(0%);
+    // clip-path: circle(0%);
     animation: circleOut 0.5s;
   }
 }
@@ -186,26 +186,26 @@ export default defineComponent({
   grid-template-columns: 65px 65px;
   gap: 10px;
   &.out {
-    clip-path: circle(0%);
+    // clip-path: circle(0%);
     animation: circleOut 0.5s;
   }
 }
 
 @keyframes circleIn {
   0% {
-    clip-path: circle(0%);
+    opacity: 0;
   }
   100% {
-    clip-path: circle(75%);
+    opacity: 1;
   }
 }
 
 @keyframes circleOut {
   0% {
-    clip-path: circle(75%);
+    opacity: 1;
   }
   100% {
-    clip-path: circle(0%);
+    opacity: 0;
   }
 }
 
@@ -215,8 +215,8 @@ export default defineComponent({
   top: 0;
   width: 1720px;
   height: 880px;
-
-  clip-path: circle(0%);
+opacity: 0;
+  // clip-path: circle(0%);
   // animation: detailIn ease-in 1s 1 reverse;
   .detailClip {
     border-radius: 12px;
@@ -232,17 +232,20 @@ export default defineComponent({
     width: 100%;
   }
   &.opened {
+    opacity: 1;
     animation: detailIn ease-in 0.5s;
-    clip-path: circle(75%);
+    // clip-path: circle(75%);
   }
 }
 
 @keyframes detailIn {
   0% {
-    clip-path: circle(0% at v-bind(detailX) v-bind(detailY));
+    opacity: 0;
+    // clip-path: circle(0% at v-bind(detailX) v-bind(detailY));
   }
   100% {
-    clip-path: circle(75%);
+    opacity: 1;
+    // clip-path: circle(75%);
   }
 }
 

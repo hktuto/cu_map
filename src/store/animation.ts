@@ -114,11 +114,39 @@ export const useAnimation = defineStore("animation", () => {
     });
   };
 
+  const fadeIn = (
+    el: HTMLElement,
+    callback: any = () => {}
+  ): anime.AnimeInstance => {
+    return anime({
+      targets: el,
+      opacity: [0, 1],
+      duration: 500,
+      easing: "easeInOutSine",
+      complete: callback,
+    });
+  };
+
+  const fadeOut = (
+    el: HTMLElement,
+    callback: any = () => {}
+  ): anime.AnimeInstance => {
+    return anime({
+      targets: el,
+      opacity: [1, 0],
+      duration: 500,
+      easing: "easeInOutSine",
+      complete: callback,
+    });
+  };
+
   return {
     setScale,
     screenScale,
     dropIn,
     floating,
+    fadeIn,
+    fadeOut,
     toScale,
   };
 });
