@@ -12,6 +12,7 @@ export type DistrictPin = {
   y: number;
   icon: string;
   detailImg: string;
+  detailContent: string;
 };
 
 export type Distrist = {

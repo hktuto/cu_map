@@ -2,13 +2,20 @@
   <game-wraper :bgColor="bgColor">
     <div class="districtContainer">
       <div :class="{ mapContainer: true, detailOpened }" ref="mapContainer">
+
         <div class="mapRadius">
+          
           <object type="image/svg+xml" :data="district?.mapIcon" />
         </div>
 
         <div :class="{ detailContainer: true, opened: detailOpened }">
           <div class="detailClip">
-            <object type="image/svg+xml" :data="detailImg"></object>
+            <div class="leftContent">
+              <img :src="detailImg" />
+            </div>
+            <div class="rightContent">
+              <img :src="detailContent" />
+            </div>
           </div>
         </div>
         <div v-if="!detailOpened" class="iconsContainer">
@@ -60,12 +67,14 @@ export default defineComponent({
 
     const detailOpened = ref(false);
     const detailImg = ref("");
+    const detailContent = ref("");
     const detailX = ref("0%");
     const detailY = ref("0%");
 
     const openDetail = (item: DistrictPin) => {
       console.log(DataTransferItemList);
       detailImg.value = item.detailImg;
+      detailContent.value = item.detailContent;
       detailX.value = item.x + "%";
       detailY.value = item.y + "%";
       detailOpened.value = true;
@@ -104,6 +113,7 @@ export default defineComponent({
       detailX,
       detailY,
       detailOpened,
+      detailContent,
     };
   },
 });
@@ -222,8 +232,26 @@ opacity: 0;
     border-radius: 12px;
     overflow: hidden;
     background: rgba(0, 0, 0, 0.95);
-    img {
-      width: 100%;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    .leftContent{
+      flex: 1 0 auto;
+      overflow: hidden;
+      img {
+        width: 100%;
+      }
+    }
+    .rightContent {
+      flex: 0 0 auto;
+      overflow: auto;
+      height: 100%;
+      img{
+        width: 100%;
+      }
     }
   }
 
