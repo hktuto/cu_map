@@ -131,8 +131,8 @@ export default defineComponent({
   }
 }
 .mapContainer {
-  width: 1720px;
-  height: 880px;
+  width: 1724px;
+  height: 884px;
 
   background: v-bind(coverColor);
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
@@ -223,8 +223,8 @@ export default defineComponent({
   position: absolute;
   left: 0;
   top: 0;
-  width: 1720px;
-  height: 880px;
+  width: 1724px;
+  height: 884px;
 opacity: 0;
   // clip-path: circle(0%);
   // animation: detailIn ease-in 1s 1 reverse;
@@ -239,14 +239,14 @@ opacity: 0;
     justify-content: flex-start;
     align-items: flex-start;
     .leftContent{
-      flex: 1 0 auto;
+      height:100%;
       overflow: hidden;
       img {
-        width: 100%;
+        height: 100%;
       }
     }
     .rightContent {
-      flex: 0 0 auto;
+      max-width: 817px;
       overflow: auto;
       height: 100%;
       img{

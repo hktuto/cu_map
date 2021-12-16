@@ -3,7 +3,7 @@
     <div :class="{ infoContent: true, hidden: !infoOpened }" @click.stop="() => {}">
       <div class="scrollContainer">
         <img
-          src="/images/info_content.svg"
+          src="/images/info_content-01.png"
         />
       </div>
     </div>
@@ -18,11 +18,13 @@
 
 <script lang="ts">
 import { defineComponent, ref } from "vue";
+import { useRoute } from "vue-router";
 
 export default defineComponent({
   setup() {
-    const infoOpened = ref(true);
-
+    const route = useRoute()
+    const infoOpened = ref(route.query.showInfo || false);
+    
     return {
       infoOpened,
     };
@@ -53,17 +55,21 @@ export default defineComponent({
     transition: opacity 0.2s;
     position: absolute;
     bottom: 80px;
-    left: 15%;
-    width: 70%;
-    height: 80vh;
+    left: 430px;
+    width: 1062px;
+    height: 70vh;
     padding: 40px;
-    border-radius: 20px;
+    border-radius: 30px;
     background: rgba(255,255,255,0.8);
     overflow: hidden;
     .scrollContainer {
       width:100%;
       height:100%;
       overflow: auto;
+      position: relative;
+      img{
+        width:100%;
+      }
     }
     &.hidden {
       opacity: 0;

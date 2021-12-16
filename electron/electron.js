@@ -20,7 +20,7 @@ function createWindow() {
   // win.loadFile("index.html");
   mainWindow.loadURL(
     isDev
-      ? "http://localhost:3000"
+      ? "http://localhost:3000/#/?showInfo=true"
       : `file://${path.join(__dirname, "../dist/index.html")}`
   );
   console.log(__dirname);

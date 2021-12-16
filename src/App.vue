@@ -16,7 +16,7 @@ export default defineComponent({
     const route = useRoute();
     const router = useRouter();
 
-    const timer = ref(600);
+    const timer = ref(10);
 
     district.getData();
 
@@ -40,7 +40,9 @@ export default defineComponent({
       if (time <= 0) {
         resetTimer();
         if (route.name !== "index") {
-          router.push("/");
+          router.push({
+            path:'/?showInfo=true'
+          });
         }
       }
     });
