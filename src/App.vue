@@ -41,10 +41,7 @@ export default defineComponent({
         resetTimer();
         if (route.name !== "index") {
           router.push({
-            path:'/',
-            query:{
-              showInfo: "true"
-            }
+            path: "/",
           });
         }
       }

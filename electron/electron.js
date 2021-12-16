@@ -20,8 +20,8 @@ function createWindow() {
   // win.loadFile("index.html");
   mainWindow.loadURL(
     isDev
-      ? "http://localhost:3000/#/?showInfo=true"
-      : `file://${path.join(__dirname, "../dist/index.html/#/?showInfo=true")}`
+      ? "http://localhost:3000"
+      : `file://${path.join(__dirname, "../dist/index.html")}`
   );
   console.log(__dirname);
   // Open the DevTools.

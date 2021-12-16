@@ -2,9 +2,7 @@
   <game-wraper :bgColor="bgColor">
     <div class="districtContainer">
       <div :class="{ mapContainer: true, detailOpened }" ref="mapContainer">
-
         <div class="mapRadius">
-          
           <object type="image/svg+xml" :data="district?.mapIcon" />
         </div>
 
@@ -89,7 +87,7 @@ export default defineComponent({
     });
 
     const goHome = () => {
-      router.push({ path: "/" });
+      router.push({ path: "/", query: { hideInfo: "true" } });
     };
 
     const goBack = () => {
@@ -225,7 +223,7 @@ export default defineComponent({
   top: 0;
   width: 1724px;
   height: 884px;
-opacity: 0;
+  opacity: 0;
   // clip-path: circle(0%);
   // animation: detailIn ease-in 1s 1 reverse;
   .detailClip {
@@ -238,18 +236,19 @@ opacity: 0;
     flex-flow: row nowrap;
     justify-content: flex-start;
     align-items: flex-start;
-    .leftContent{
-      height:100%;
+    .leftContent {
+      height: 100%;
       overflow: hidden;
       img {
         height: 100%;
       }
     }
     .rightContent {
-      max-width: 817px;
+      min-width: 817px;
+      max-width: 853px;
       overflow: auto;
       height: 100%;
-      img{
+      img {
         width: 100%;
       }
     }
