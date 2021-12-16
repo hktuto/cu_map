@@ -41,6 +41,7 @@
     "wait-on": "^6.0.0"
   },
   "build": {
+    "asar": false,
     "appId": "com.my-website.my-app",
     "productName": "MyApp",
     "copyright": "Copyright © 2019 ${author}",
