@@ -14,21 +14,21 @@
           "y": 3.6,
           "icon": "./images/north/d1_point.svg",
           "detailImg": "./images/newDetail/d_north-2-p.png",
-          "detailContent":"./images/newDetail/d_north-2-c.png"
+          "detailContent": "./images/newDetail/d_north-2-c.png"
         },
         {
           "x": 56,
           "y": 0.4,
           "icon": "./images/north/d2_point.svg",
           "detailImg": "./images/newDetail/d_north-1-p.png",
-          "detailContent":"./images/newDetail/d_north-1-c.png"
+          "detailContent": "./images/newDetail/d_north-1-c.png"
         },
         {
           "x": 66.4,
           "y": 63.5,
           "icon": "./images/north/d3_point.svg",
           "detailImg": "./images/newDetail/d_north-3-p.png",
-          "detailContent":"./images/newDetail/d_north-3-c.png"
+          "detailContent": "./images/newDetail/d_north-3-c.png"
         }
       ]
     },
@@ -46,21 +46,21 @@
           "y": 55,
           "icon": "./images/yuen-long/d1_p.svg",
           "detailImg": "./images/newDetail/d_yeun-long-3-p.png",
-          "detailContent":"./images/newDetail/d_yeun-long-3-c.png"
+          "detailContent": "./images/newDetail/d_yeun-long-3-c.png"
         },
         {
           "x": 56.3,
           "y": 30,
           "icon": "./images/yuen-long/d2_p.svg",
           "detailImg": "./images/newDetail/d_yeun-long-1-p.png",
-          "detailContent":"./images/newDetail/d_yeun-long-1-c.png"
+          "detailContent": "./images/newDetail/d_yeun-long-1-c.png"
         },
         {
           "x": 71.4,
           "y": 20,
           "icon": "./images/yuen-long/d3_p.svg",
           "detailImg": "./images/newDetail/d_yeun-long-2-p.png",
-          "detailContent":"./images/newDetail/d_yeun-long-2-c.png"
+          "detailContent": "./images/newDetail/d_yeun-long-2-c.png"
         }
       ]
     },
@@ -78,7 +78,7 @@
           "y": 60,
           "icon": "./images/tuen-mun/d1_p.svg",
           "detailImg": "./images/newDetail/d_tuen-mun-1-p.png",
-          "detailContent":"./images/newDetail/d_tuen-mun-1-c.png"
+          "detailContent": "./images/newDetail/d_tuen-mun-1-c.png"
         }
       ]
     },
@@ -96,21 +96,21 @@
           "y": 47.6,
           "icon": "./images/taipo/d1_p.svg",
           "detailImg": "./images/newDetail/d_taipo-2-p.png",
-          "detailContent":"./images/newDetail/d_taipo-2-c.png"
+          "detailContent": "./images/newDetail/d_taipo-2-c.png"
         },
         {
           "x": 37.4,
           "y": 4.1,
           "icon": "./images/taipo/d2_p.svg",
           "detailImg": "./images/newDetail/d_taipo-1-p.png",
-          "detailContent":"./images/newDetail/d_taipo-1-c.png"
+          "detailContent": "./images/newDetail/d_taipo-1-c.png"
         },
         {
           "x": 42.6,
           "y": 57,
           "icon": "./images/taipo/d3_p.svg",
           "detailImg": "./images/newDetail/d_taipo-3-p.png",
-          "detailContent":"./images/newDetail/d_taipo-3-c.png"
+          "detailContent": "./images/newDetail/d_taipo-3-c.png"
         }
       ]
     },
@@ -128,21 +128,21 @@
           "y": 48,
           "icon": "./images/tsuen-wan/d1_p.svg",
           "detailImg": "./images/newDetail/d_tsuen-wan-3-p.png",
-          "detailContent":"./images/newDetail/d_tsuen-wan-3-c.png"
+          "detailContent": "./images/newDetail/d_tsuen-wan-3-c.png"
         },
         {
           "x": 38.5,
           "y": 28,
           "icon": "./images/tsuen-wan/d2_p.svg",
           "detailImg": "./images/newDetail/d_tsuen-wan-1-p.png",
-          "detailContent":"./images/newDetail/d_tsuen-wan-1-c.png"
+          "detailContent": "./images/newDetail/d_tsuen-wan-1-c.png"
         },
         {
           "x": 34.7,
           "y": 49,
           "icon": "./images/tsuen-wan/d3_p.svg",
           "detailImg": "./images/newDetail/d_tsuen-wan-2-p.png",
-          "detailContent":"./images/newDetail/d_tsuen-wan-2-c.png"
+          "detailContent": "./images/newDetail/d_tsuen-wan-2-c.png"
         }
       ]
     },
@@ -160,14 +160,14 @@
           "y": 1,
           "icon": "./images/sha-tin/d1_p.svg",
           "detailImg": "./images/newDetail/d_sha-tin-2-p.png",
-          "detailContent":"./images/newDetail/d_sha-tin-2-c.png"
+          "detailContent": "./images/newDetail/d_sha-tin-2-c.png"
         },
         {
           "x": 40.2,
           "y": 60,
           "icon": "./images/sha-tin/d2_p.svg",
           "detailImg": "./images/newDetail/d_sha-ti-1-p.png",
-          "detailContent":"./images/newDetail/d_sha-ti-1-c.png"
+          "detailContent": "./images/newDetail/d_sha-ti-1-c.png"
         }
       ]
     },
@@ -184,8 +184,8 @@
           "x": 56.1,
           "y": 60,
           "icon": "./images/kwai-tsing/d1_p.svg",
-          "detailImg": "./images/newDetail/d_kwai-tsing-1-p.png",
-          "detailContent":"./images/newDetail/d_kwai-tsing-1-c.png"
+          "detailImg": "./images/newDetail/d_kwai-tsing-1-p.svg",
+          "detailContent": "./images/newDetail/d_kwai-tsing-1-c.svg"
         }
       ]
     },
@@ -203,14 +203,14 @@
           "y": 6.4,
           "icon": "./images/sham-shui-po/d1_p.svg",
           "detailImg": "./images/newDetail/d_sham-shui-po-1-p.png",
-          "detailContent":"./images/newDetail/d_sham-shui-po-1-c.png"
+          "detailContent": "./images/newDetail/d_sham-shui-po-1-c.png"
         },
         {
           "x": 55.4,
           "y": 36,
           "icon": "./images/sham-shui-po/d2_p.svg",
           "detailImg": "./images/newDetail/d_sham-shui-po-2-p.png",
-          "detailContent":"./images/newDetail/d_sham-shui-po-2-c.png"
+          "detailContent": "./images/newDetail/d_sham-shui-po-2-c.png"
         }
       ]
     },
@@ -228,14 +228,14 @@
           "y": 42,
           "icon": "./images/yau-tsim-mong/d1_p.svg",
           "detailImg": "./images/newDetail/d_yau-tsim-mong-2-p.png",
-          "detailContent":"./images/newDetail/d_yau-tsim-mong-2-c.png"
+          "detailContent": "./images/newDetail/d_yau-tsim-mong-2-c.png"
         },
         {
           "x": 70,
           "y": 70,
           "icon": "./images/yau-tsim-mong/d2_p.svg",
           "detailImg": "./images/newDetail/d_yau-tsim-mong-1-p.png",
-          "detailContent":"./images/newDetail/d_yau-tsim-mong-1-c.png"
+          "detailContent": "./images/newDetail/d_yau-tsim-mong-1-c.png"
         }
       ]
     },
@@ -253,7 +253,7 @@
           "y": 42,
           "icon": "./images/kowloonCity/d1_p.svg",
           "detailImg": "./images/newDetail/d_kowloon-city-1-p.png",
-          "detailContent":"./images/newDetail/d_kowloon-city-1-c.png"
+          "detailContent": "./images/newDetail/d_kowloon-city-1-c.png"
         }
       ]
     },
@@ -271,14 +271,14 @@
           "y": 56,
           "icon": "./images/wong-tai-sin/d1_p.svg",
           "detailImg": "./images/newDetail/d_wong-tai-sin-2-p.png",
-          "detailContent":"./images/newDetail/d_wong-tai-sin-2-c.png"
+          "detailContent": "./images/newDetail/d_wong-tai-sin-2-c.png"
         },
         {
           "x": 65,
           "y": 76,
           "icon": "./images/wong-tai-sin/d2_p.svg",
           "detailImg": "./images/newDetail/d_wong-tai-sin-1-p.png",
-          "detailContent":"./images/newDetail/d_wong-tai-sin-1-c.png"
+          "detailContent": "./images/newDetail/d_wong-tai-sin-1-c.png"
         }
       ]
     },
@@ -296,14 +296,14 @@
           "y": 56,
           "icon": "./images/kwun-tong/d1_p.svg",
           "detailImg": "./images/newDetail/d_kung-tong-2-p.png",
-          "detailContent":"./images/newDetail/d_kung-tong-2-c.png"
+          "detailContent": "./images/newDetail/d_kung-tong-2-c.png"
         },
         {
           "x": 83.5,
           "y": 20,
           "icon": "./images/kwun-tong/d2_p.svg",
           "detailImg": "./images/newDetail/d_kung-tong-1-p.png",
-          "detailContent":"./images/newDetail/d_kung-tong-1-c.png"
+          "detailContent": "./images/newDetail/d_kung-tong-1-c.png"
         }
       ]
     },
@@ -321,7 +321,7 @@
           "y": 32,
           "icon": "./images/saikung/d1_p.svg",
           "detailImg": "./images/newDetail/d_saikung-1-p.png",
-          "detailContent":"./images/newDetail/d_saikung-1-c.png"
+          "detailContent": "./images/newDetail/d_saikung-1-c.png"
         }
       ]
     },
@@ -339,7 +339,7 @@
           "y": 5.4,
           "icon": "./images/island/d1_point.svg",
           "detailImg": "./images/newDetail/d_island-1-p.png",
-          "detailContent":"./images/newDetail/d_island-1-c.png"
+          "detailContent": "./images/newDetail/d_island-1-c.png"
         }
       ]
     },
@@ -357,14 +357,14 @@
           "y": 70,
           "icon": "./images/central/d1_p.svg",
           "detailImg": "./images/newDetail/d_central-1-p.png",
-          "detailContent":"./images/newDetail/d_central-1-c.png"
+          "detailContent": "./images/newDetail/d_central-1-c.png"
         },
         {
           "x": 65,
           "y": 57,
           "icon": "./images/central/d2_p.svg",
           "detailImg": "./images/newDetail/d_central-2-p.png",
-          "detailContent":"./images/newDetail/d_central-2-c.png"
+          "detailContent": "./images/newDetail/d_central-2-c.png"
         }
       ]
     },
@@ -382,14 +382,14 @@
           "y": 6,
           "icon": "./images/wanchai/d1_p.svg",
           "detailImg": "./images/newDetail/d_wanchai-1-p.png",
-          "detailContent":"./images/newDetail/d_wanchai-1-c.png"
+          "detailContent": "./images/newDetail/d_wanchai-1-c.png"
         },
         {
           "x": 16,
           "y": 20,
           "icon": "./images/wanchai/d2_p.svg",
           "detailImg": "./images/newDetail/d_wanchai-2-p.png",
-          "detailContent":"./images/newDetail/d_wanchai-2-c.png"
+          "detailContent": "./images/newDetail/d_wanchai-2-c.png"
         }
       ]
     },
@@ -407,14 +407,14 @@
           "y": 44,
           "icon": "./images/eastern/d1_p.svg",
           "detailImg": "./images/newDetail/d_eastern-1-p.png",
-          "detailContent":"./images/newDetail/d_eastern-1-c.png"
+          "detailContent": "./images/newDetail/d_eastern-1-c.png"
         },
         {
           "x": 3,
           "y": 16,
           "icon": "./images/eastern/d2_p.svg",
           "detailImg": "./images/newDetail/d_eastern-2-p.png",
-          "detailContent":"./images/newDetail/d_eastern-2-c.png"
+          "detailContent": "./images/newDetail/d_eastern-2-c.png"
         }
       ]
     },
@@ -432,21 +432,21 @@
           "y": 54,
           "icon": "./images/southern/d1_p.svg",
           "detailImg": "./images/newDetail/d_south-1-p.png",
-          "detailContent":"./images/newDetail/d_south-1-c.png"
+          "detailContent": "./images/newDetail/d_south-1-c.png"
         },
         {
           "x": 52,
           "y": 53.5,
           "icon": "./images/southern/d2_p.svg",
           "detailImg": "./images/newDetail/d_south-2-p.png",
-          "detailContent":"./images/newDetail/d_south-2-c.png"
+          "detailContent": "./images/newDetail/d_south-2-c.png"
         },
         {
           "x": 45,
           "y": 2,
           "icon": "./images/southern/d3_p.svg",
           "detailImg": "./images/newDetail/d_south-3-p.png",
-          "detailContent":"./images/newDetail/d_south-3-c.png"
+          "detailContent": "./images/newDetail/d_south-3-c.png"
         }
       ]
     }
