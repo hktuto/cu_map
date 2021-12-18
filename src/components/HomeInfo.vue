@@ -5,11 +5,12 @@
       @click.stop="() => {}"
     >
       <div class="scrollContainer">
-        <img src="/images/info_content-01.png" />
+        <img src="/images/info_content-02.svg" />
       </div>
     </div>
     <div class="btn">
-      <img src="/images/menu.svg" @click="infoOpened = !infoOpened" />
+      <img v-if="!infoOpened" src="/images/menu.svg" @click="infoOpened = !infoOpened" />
+      <img v-else src="/images/menu_close.svg" @click="infoOpened = !infoOpened" />
     </div>
   </div>
 </template>
@@ -21,7 +22,7 @@ import { useRoute } from "vue-router";
 export default defineComponent({
   setup() {
     const route = useRoute();
-    const infoOpened = ref<boolean>(!!route.query.hideInfo || true);
+    const infoOpened = ref<boolean>(!route.query.hideInfo);
 
     return {
       infoOpened,
@@ -39,7 +40,7 @@ export default defineComponent({
     position: absolute;
     width: 120px;
     height: 120px;
-    left: calc(50% - 60px);
+    left: calc(50vw - 60px);
     bottom: 20px;
     background: rgba(255, 255, 255, 0.8);
     border-radius: 50%;
@@ -53,9 +54,7 @@ export default defineComponent({
     transition: opacity 0.2s;
     position: absolute;
     bottom: 80px;
-    left: 430px;
-    width: 1062px;
-    height: 70vh;
+    left: calc( 50vw - 510px);
     padding: 40px;
     border-radius: 30px;
     background: rgba(255, 255, 255, 0.8);
@@ -63,10 +62,10 @@ export default defineComponent({
     .scrollContainer {
       width: 100%;
       height: 100%;
-      overflow: auto;
+      padding-bottom: 40px;
       position: relative;
       img {
-        width: 100%;
+        width: 942px;
       }
     }
     &.hidden {
