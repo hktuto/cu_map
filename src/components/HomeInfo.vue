@@ -42,7 +42,7 @@ export default defineComponent({
     height: 120px;
     left: calc(50vw - 60px);
     bottom: 20px;
-    background: rgba(255, 255, 255, 0.8);
+    background: rgba(255, 255, 255, 0.9);
     border-radius: 50%;
     padding: 10px;
     img {
@@ -57,7 +57,7 @@ export default defineComponent({
     left: calc( 50vw - 510px);
     padding: 40px;
     border-radius: 30px;
-    background: rgba(255, 255, 255, 0.8);
+    background: rgba(255, 255, 255, 0.9);
     overflow: hidden;
     .scrollContainer {
       width: 100%;
