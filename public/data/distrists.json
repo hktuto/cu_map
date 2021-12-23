@@ -166,8 +166,8 @@
           "x": 40.2,
           "y": 60,
           "icon": "./images/sha-tin/d2_p.svg",
-          "detailImg": "./images/newDetail/d_sha-ti-1-p.svg",
-          "detailContent": "./images/newDetail/d_sha-ti-1-c.svg"
+          "detailImg": "./images/newDetail/d_sha-tin-1-p.svg",
+          "detailContent": "./images/newDetail/d_sha-tin-1-c.svg"
         }
       ]
     },
