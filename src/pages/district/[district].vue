@@ -11,7 +11,7 @@
             <div class="leftContent">
               <img :src="detailImg" />
             </div>
-            <div class="rightContent">
+            <div ref="rightContent" class="rightContent">
               <img :src="detailContent" />
             </div>
           </div>
@@ -57,6 +57,8 @@ export default defineComponent({
       route.params.district as any
     );
 
+    const rightContent = ref()
+
     const mapContainer = ref<HTMLElement>();
     const actionContainer = ref<HTMLElement>();
 
@@ -76,14 +78,17 @@ export default defineComponent({
       detailX.value = item.x + "%";
       detailY.value = item.y + "%";
       detailOpened.value = true;
+      rightContent.value.scrollTop = 0;
     };
 
     onBeforeRouteLeave(async () => {
       if (mapContainer.value) {
         mapContainer.value.classList.add("out");
         actionContainer.value?.classList.add("out");
+      
         await appStore.sleep(300);
       }
+      rightContent.value.scrollTop = 0;
     });
 
     const goHome = () => {
@@ -95,7 +100,7 @@ export default defineComponent({
         detailOpened.value = false;
         return;
       }
-      router.back();
+      router.push({ path: "/", query: { hideInfo: "true" } });
     };
 
     return {
@@ -112,6 +117,7 @@ export default defineComponent({
       detailY,
       detailOpened,
       detailContent,
+      rightContent,
     };
   },
 });
