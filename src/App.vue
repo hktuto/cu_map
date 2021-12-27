@@ -1,24 +1,22 @@
 <template>
-  <router-view />
+  <div class="app">
+    <router-view  />
+  </div>
 </template>
 
 <script lang="ts">
 import { defineComponent, onMounted, onUnmounted, ref, watch } from "vue";
 import { useRoute, useRouter } from "vue-router";
 import { useAnimation } from "./store/animation";
-import { useDistrictStore } from "./store/district";
 
 export default defineComponent({
   setup() {
     const animation = useAnimation();
-    const district = useDistrictStore();
-
     const route = useRoute();
     const router = useRouter();
 
     const timer = ref(600);
 
-    district.getData();
 
     const resetTimer = () => {
       timer.value = 600;
@@ -46,6 +44,8 @@ export default defineComponent({
         }
       }
     });
+    return {
+    }
   },
 });
 </script>

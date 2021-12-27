@@ -8,8 +8,7 @@
           @iconClick="iconClickHandler"
         ></HomeIcon>
       </div>
-
-      <img class="bg" src="/images/home_bg.svg" />
+      <img class="bg" :src="district?.main?.bg" />
       <HomeInfo />
     </GameWraper>
 
@@ -29,6 +28,8 @@ import HomeInfo from "../components/HomeInfo.vue";
 export default defineComponent({
   components: { HomeIcon, GameWraper, HomeInfo },
   setup() {
+
+    
     const rippleX = ref("0px");
     const rippleY = ref("0px");
     const rippleEl = ref<any>();

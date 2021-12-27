@@ -2,8 +2,8 @@
   <game-wraper :bgColor="bgColor">
     <div class="districtContainer">
       <div :class="{ mapContainer: true, detailOpened }" ref="mapContainer">
-        <div class="mapRadius">
-          <object type="image/svg+xml" :data="district?.mapIcon" />
+        <div class="mapRadius" :style="`background: url(${district?.mapIcon || ''}) no-repeat; background-size: cover;`">
+         
         </div>
 
         <div :class="{ detailContainer: true, opened: detailOpened }">

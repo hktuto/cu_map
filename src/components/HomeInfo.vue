@@ -5,27 +5,30 @@
       @click.stop="() => {}"
     >
       <div class="scrollContainer">
-        <img src="/images/info_content-02.svg" />
+        <img :src="district?.main?.info" />
       </div>
     </div>
     <div class="btn">
-      <img v-if="!infoOpened" src="/images/menu.svg" @click="infoOpened = !infoOpened" />
-      <img v-else src="/images/menu_close.svg" @click="infoOpened = !infoOpened" />
+      <img v-if="!infoOpened" :src="district?.main?.menuOpen" @click="infoOpened = !infoOpened" />
+      <img v-else :src="district?.main?.menuClose" @click="infoOpened = !infoOpened" />
     </div>
   </div>
 </template>
 
 <script lang="ts">
 import { defineComponent, ref } from "vue";
+import { useDistrictStore } from "../store/district";
 import { useRoute } from "vue-router";
 
 export default defineComponent({
   setup() {
     const route = useRoute();
+    const district = useDistrictStore();
     const infoOpened = ref<boolean>(!route.query.hideInfo);
 
     return {
       infoOpened,
+      district,
     };
   },
 });
